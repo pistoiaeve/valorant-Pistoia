@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
     <link rel="icon" href="./images/descarga.png">
@@ -43,15 +46,17 @@
     </div>    
     </main>
     <section class="section__game">
+        <div class="wow animate__animated animate__slideInLeft">
         <h2 class="section__text">Valorant is a team-based<br>first-person hero shooter <br>
             set in the near future.<br>Players play as one of a set of Agents, <br>
             characters based on several countries<br> and cultures around the world.</h2>
+        </div>
         <button class="section__button" type="button">Play now</button>
     </section>
     <div class="news__items">
         <img class="news__img" src="./images/valorantalert.png">
         <button class="news__button" type="button">See article</button>
-        <p>
+        <p class="wow animate__animated animate__slideInLeft">
             Valorant masters copenhagen:<br>everything you <br>need to know!
         </p>
     </div>
@@ -68,6 +73,10 @@
             in your Project or on any website, advertising material, video,<br>
             or other publication.</p>
     </footer>
+    <script src="./wowfiles/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 
 </html>

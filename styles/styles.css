@@ -78,11 +78,18 @@ html{
     flex-direction: column-reverse;
     align-items: center;
 }
+.animate__animate.animate__slideInLeft{
+    --animate-duration: 6s;
+  }
 .section__text{
     font-family: george;
     font-size: 1rem;
     color: white;
     text-transform: capitalize;
+}
+.section__text:hover{
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 .section__button{
     font-family: revolution;
@@ -479,11 +486,25 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 64%;
+      width: 100%;
+    }
+  }
 .merch__logo h1{
     font-family: revolution;
      color: white;
      font-size: 3rem;
+     animation-name: slidein;
+     animation-duration: 3s;
 }
+
 .merch__logo h2{
     font-family: george;
     color: white;
