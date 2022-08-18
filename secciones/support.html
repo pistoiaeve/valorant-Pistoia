@@ -45,14 +45,19 @@
     </header>
     <div class="support__info">
         <h1 class="wow animate__animated animate__fadeInDown animate__slow">Can’t find what you’re looking for?</h1>
-        <article class="support__form">
-        <div class="mb-3 $black">
+        <article>
+        <div class="mb-3 support__form">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <div class="mb-3 support__form">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div>
+            <label for="formFileSm" class="form-label support__form">Attachments</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+            <button type="submit" class="btn btn-dark mb-3 support__form mt-3">Submit request</button>
           </div>
         </article>
     </div>
