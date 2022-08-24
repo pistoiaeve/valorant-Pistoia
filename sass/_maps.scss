@@ -1,0 +1,84 @@
+/*MAPS SECTION */
+/*MOBILE FIRST*/
+.maps__body {
+    background-color: black;
+}
+.maps__bind {
+    background-image: url(../images/bind.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 20rem;
+    h1 {
+        font-family: $bigfont;
+        font-size: 3rem;
+        color: white;
+    }
+    p {
+        font-family: $titlefont;
+        font-size: 0.7rem;
+        color: white;
+        text-align: left;
+    }
+}
+.maps__haven {
+    background-image: url(../images/haven.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 20rem;
+    h1 {
+        font-family: $bigfont;
+        font-size: 3rem;
+        color: white;
+    }
+    p {
+        font-family: $titlefont;
+        font-size: 0.7rem;
+        color: white;
+        text-align: left;
+    }
+} 
+.maps__fracture {
+    background-image: url(../images/fracture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 20rem;
+    h1 {
+        font-family: $bigfont;
+        font-size: 2rem;
+        color: white;
+    }
+    p {
+        font-family: $titlefont;
+        font-size: 0.7rem;
+        color: white;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .maps__fracture,
+    .maps__bind,
+    .maps__haven {
+        min-height: 35rem;
+    }
+
+    .maps__fracture p,
+    .maps__bind p,
+    .maps__haven p {
+        font-size: 1.5rem
+    }
+
+    .maps__fracture{ h1 {
+        font-size: 5rem;
+    }
+}
+
+    .maps__bind h1,
+    .maps__haven h1 {
+        font-size: 5rem;
+    }
+}

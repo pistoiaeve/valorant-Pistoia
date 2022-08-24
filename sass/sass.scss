@@ -1,0 +1,296 @@
+@import "fonts";
+@import "general";
+@import "index";
+@import "variables";
+@import "maps";
+/*support*/
+/*mobilefirst*/
+.support__body {
+    background-color: black;
+}
+
+.support__info {
+    background-image: url(../images/support.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    height: 45rem;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.support__info h1 {
+    font-family: revolution;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.support__form {
+    font-family: buttons;
+    color: white;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .support__info h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .support__header a {
+        display: block;
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .support__info h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .support__info h1 {
+        font-size: 5rem;
+    }
+}
+
+/*MERCH*/
+/*mobile first*/
+.merch__body {
+    background-color: black;
+}
+
+.merch {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 30rem 30rem;
+}
+
+.merch__logo {
+    background-image: url(../images/valorantmerch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.merch__logo h1 {
+    font-family: revolution;
+    color: white;
+    font-size: 3rem;
+}
+
+.merch__logo h2 {
+    font-family: george;
+    color: white;
+    font-size: 2rem;
+}
+
+.merch__clothes {
+    background-image: url(../images/merch.jpg);
+    background-repeat: no-repeat;
+    background-size: 30rem 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.merch__clothes h2 {
+    font-family: george;
+    color: white;
+    font-size: 2rem;
+}
+
+.merch__windbreaker {
+    background-image: url(../images/defythelimits.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.merch__windbreaker h3 {
+    font-family: george;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.merch__windbreaker h4 {
+    font-family: george;
+    color: white;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 367px) {
+    .merch__clothes {
+        background-size: cover;
+
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .merch__logo {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .merch__logo h1 {
+        font-size: 4rem;
+    }
+
+    .merch__clothes h2 {
+        font-size: 3rem;
+    }
+
+    .merch__windbreaker h3 {
+        font-size: 3rem;
+    }
+
+    .merch__windbreaker h4 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .merch {
+        grid-template-rows: 50rem 50rem 50rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .merch {
+        grid-template-rows: 70rem 70rem 70rem;
+    }
+
+    .merch__logo h1 {
+        font-size: 5rem;
+    }
+
+    .merch__clothes h2 {
+        font-size: 4rem;
+    }
+
+    .merch__windbreaker h3 {
+        font-size: 4rem;
+    }
+
+    .merch__windbreaker h4 {
+        font-size: 4rem;
+    }
+}
+
+/*PLAYERS*/
+/*mobile first*/
+.players__body {
+    background-color: black;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 5rem;
+}
+
+.players__leaderboard {
+    background-image: url(../images/omen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.players__leaderboard img {
+    width: 15%;
+}
+
+.players__leaderboard h1 {
+    font-family: revolution;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.players__search {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.players__search h2 {
+    font-family: george;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.players__input {
+    width: 30%;
+    text-align: center;
+}
+
+.players__list li {
+    color: white;
+    font-family: george;
+    font-size: 1rem;
+}
+
+.imgradiant {
+    width: 2rem;
+}
+
+.animate__fadeIn {
+    animation-duration: 4s;
+}
+
+@media screen and (min-width: 600px) {
+    .players__search h2 {
+        font-size: 1.5rem;
+    }
+
+    .players__leaderboard h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .players__leaderboard {
+        height: 40rem;
+    }
+
+    .players__search h2 {
+        font-size: 2rem;
+    }
+
+    .players__leaderboard h1 {
+        font-size: 3rem;
+    }
+
+    .players__list {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .players {
+        grid-template-rows: 40rem 5rem;
+    }
+}
