@@ -41,15 +41,7 @@
         text-transform: capitalize;
     }
 }
-.section__button{
-    font-family: $buttonfont;
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-    border-radius: 50rem;
-    &:hover{
-        background-color: $hovercolor;
-    }
-}
+
 .news__items {
     background-color: rgba(84, 57, 76, 255);
     display: flex;
@@ -67,18 +59,7 @@
         position: relative;
         left: 2rem;
     }
-    .news__button {
-        font-family: buttons;
-        font-size: 0.8rem;
-        letter-spacing: 0.1rem;
-        border-radius: 30rem;
-        position: relative;
-        top: -2rem;
-        &:hover{
-                background-color: $hovercolor; 
-        }
     }
-}
 
 @media screen and (min-width: 460px) {
     .section__game {
