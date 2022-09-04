@@ -1,16 +1,102 @@
-@import "fonts";
 @import "general";
-@import "index";
 @import "variables";
-@import "maps";
-@import "extendmixin";
-/*support*/
-/*mobilefirst*/
-.support__body {
+@import "fonts";
+@import "index";
+@import "animation";
+  /*MAPS SECTION */
+  /*MOBILE FIRST*/
+  .maps__body {
     background-color: black;
-}
-
-.support__info {
+  }
+  .maps__bind {
+    background-image: url(../images/bind.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 20rem;
+  }
+  
+  .maps__bind h1 {
+    font-family: revolution;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .maps__bind p {
+    font-family: george;
+    font-size: 0.7rem;
+    color: white;
+    text-align: left;
+  }
+  
+  .maps__haven {
+    background-image: url(../images/haven.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 20rem;
+  }
+  
+  .maps__haven h1 {
+    font-family: revolution;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .maps__haven p {
+    font-family: george;
+    font-size: 0.7rem;
+    color: white;
+    text-align: left;
+  }
+  
+  .maps__fracture {
+    background-image: url(../images/fracture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 20rem;
+  }
+  
+  .maps__fracture h1 {
+    font-family: revolution;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .maps__fracture p {
+    font-family: george;
+    font-size: 0.7rem;
+    color: white;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .maps__fracture,
+  .maps__bind,
+  .maps__haven {
+      min-height: 35rem;
+    }
+    .maps__fracture p,
+  .maps__bind p,
+  .maps__haven p {
+      font-size: 1.5rem;
+    }
+    .maps__fracture h1 {
+      font-size: 5rem;
+    }
+    .maps__bind h1,
+  .maps__haven h1 {
+      font-size: 5rem;
+    }
+  }
+  /*support*/
+  /*mobilefirst*/
+  .support__body {
+    background-color: black;
+  }
+  
+  .support__info {
     background-image: url(../images/support.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,77 +104,77 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-between;
-    align-content: center;
     height: 45rem;
+    align-content: center;
     justify-content: space-evenly;
     align-items: stretch;
     justify-items: center;
-}
-
-.support__info h1 {
+  }
+  
+  .support__info h1 {
+    font-family: revolution;
     color: white;
-}
-
-.support__form {
+    font-size: 2.5rem;
+  }
+  
+  .support__form {
+    font-family: buttons;
     color: white;
-}
-
-@media screen and (min-width: 600px) {
+    font-size: 1rem;
+  }
+  
+  @media screen and (min-width: 600px) {
     .support__info h1 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-}
-
-@media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1024px) {
     .support__header a {
-        display: block;
-        font-size: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+      display: block;
+      font-size: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
-
     .support__info h1 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-}
-
-@media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1024px) {
     .support__info h1 {
-        font-size: 5rem;
+      font-size: 5rem;
     }
-}
-
-/*MERCH*/
-/*mobile first*/
-.merch__body {
+  }
+  /*MERCH*/
+  /*mobile first*/
+  .merch__body {
     background-color: black;
-}
-
-.merch {
+  }
+  
+  .merch {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30rem 30rem 30rem;
-}
-
-.merch__logo {
+  }
+  
+  .merch__logo {
     background-image: url(../images/valorantmerch.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.merch__logo h1 {
+  }
+  
+  .merch__logo h1 {
     font-family: revolution;
     color: white;
     font-size: 3rem;
-}
-
-.merch__logo h2 {
+  }
+  
+  .merch__logo h2 {
     font-family: george;
     color: white;
     font-size: 2rem;
-}
-
-.merch__clothes {
+  }
+  
+  .merch__clothes {
     background-image: url(../images/merch.jpg);
     background-repeat: no-repeat;
     background-size: 30rem 30rem;
@@ -96,15 +182,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-}
-
-.merch__clothes h2 {
+  }
+  
+  .merch__clothes h2 {
     font-family: george;
     color: white;
     font-size: 2rem;
-}
-
-.merch__windbreaker {
+  }
+  
+  .merch__windbreaker {
     background-image: url(../images/defythelimits.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,95 +199,82 @@
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
-}
-
-.merch__windbreaker h3 {
+  }
+  
+  .merch__windbreaker h3 {
     font-family: george;
     color: white;
     font-size: 2rem;
     text-align: center;
-}
-
-.merch__windbreaker h4 {
+  }
+  
+  .merch__windbreaker h4 {
     font-family: george;
     color: white;
     font-size: 2rem;
-}
-
-@media screen and (min-width: 367px) {
+  }
+  
+  @media screen and (min-width: 367px) {
     .merch__clothes {
-        background-size: cover;
-
+      background-size: cover;
     }
-}
-
-@media screen and (min-width: 680px) {
+  }
+  @media screen and (min-width: 680px) {
     .merch__logo {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
     .merch__logo h1 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-
     .merch__clothes h2 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
     .merch__windbreaker h3 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
     .merch__windbreaker h4 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-}
-
-@media screen and (min-width: 800px) {
+  }
+  @media screen and (min-width: 800px) {
     .merch {
-        grid-template-rows: 50rem 50rem 50rem;
+      grid-template-rows: 50rem 50rem 50rem;
     }
-}
-
-@media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     .merch {
-        grid-template-rows: 70rem 70rem 70rem;
+      grid-template-rows: 70rem 70rem 70rem;
     }
-
     .merch__logo h1 {
-        font-size: 5rem;
+      font-size: 5rem;
     }
-
     .merch__clothes h2 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-
     .merch__windbreaker h3 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-
     .merch__windbreaker h4 {
-        font-size: 4rem;
+      font-size: 4rem;
     }
-}
-
-/*PLAYERS*/
-/*mobile first*/
-.players__body {
+  }
+  /*PLAYERS*/
+  /*mobile first*/
+  .players__body {
     background-color: black;
-}
-
-.players {
+  }
+  
+  .players {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30rem 5rem;
-}
-
-.players__leaderboard {
+  }
+  
+  .players__leaderboard {
     background-image: url(../images/omen.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -212,82 +285,77 @@
     height: 30rem;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.players__leaderboard img {
+  }
+  
+  .players__leaderboard img {
     width: 15%;
-}
-
-.players__leaderboard h1 {
+  }
+  
+  .players__leaderboard h1 {
     font-family: revolution;
     color: white;
     font-size: 1.3rem;
-}
-
-.players__search {
+  }
+  
+  .players__search {
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.players__search h2 {
+  }
+  
+  .players__search h2 {
     font-family: george;
     color: white;
     font-size: 1.3rem;
     text-align: center;
-}
-
-.players__input {
+  }
+  
+  .players__input {
     width: 30%;
     text-align: center;
-}
-
-.players__list li {
+  }
+  
+  .players__list li {
     color: white;
     font-family: george;
     font-size: 1rem;
-}
-
-.imgradiant {
+  }
+  
+  .imgradiant {
     width: 2rem;
-}
-
-.animate__fadeIn {
-    animation-duration: 4s;
-}
-
-@media screen and (min-width: 600px) {
+  }
+  
+  .animate__fadeIn {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  
+  @media screen and (min-width: 600px) {
     .players__search h2 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
     .players__leaderboard h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-}
-
-@media screen and (min-width: 800px) {
+  }
+  @media screen and (min-width: 800px) {
     .players__leaderboard {
-        height: 40rem;
+      height: 40rem;
     }
-
     .players__search h2 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-
     .players__leaderboard h1 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
     .players__list {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-}
-
-@media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1024px) {
     .players {
-        grid-template-rows: 40rem 5rem;
+      grid-template-rows: 40rem 5rem;
     }
-}
+  }

@@ -1,59 +1,69 @@
+ @import "variables";
+ @import "fonts";
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
+  }
+  
+  html {
     font-size: 62.5%;
-}
+  }
 
-.header__content{
+  body{
+    background-color: black;
+  }
+
+  .header__list{
+    background-color: black;
+    padding-bottom: 0.4rem;
     a{
+        &:hover {
+            background-color: $redpalette;
+          }
     text-decoration: none;
-    font-family: revolution;
-    letter-spacing: 0.2rem;
+    font-family: $titlefont;
+    letter-spacing: 0.1rem;
     font-size: 0.7rem;
-}
-}
-
-.header__img {
-    width: 12rem;
-}
-
-.header__button {
-    width: 2rem;
-}
-
-.header__list{
-    background-color: black;
-    a{
-        &:hover{
-            background-color: rgba(252, 66, 82, 0.7);
-        }
+    text-transform: uppercase;
     }
-    img{
+   button{
     &:hover{
-    background-color: rgb(49, 44, 44);
+        background-color:$redpalette;
+      }
+  }
 }
-}
-}
-.footer__items{
+  .header__img {
+    width: 10rem;
+  }
+  
+  .header__button {
+    width: 2rem;
+  }
+  
+  .footer__items {
     background-color: black;
-    padding-top: 0.7rem;
-    padding-bottom: 0.3rem;
-    .footer__icons{
-        color: white;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    p{
-        color: white;
-        font-family: buttons;
-        text-align: center;
-        font-size: 50%;
-        padding-top: 1rem;
-}
-}
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    .footer__icons {
+        .fa-brands{
+            padding: 0.5rem;
+            color: white;
+            border-radius: 0.4rem;
+            background-color: $redpalette;
+            box-shadow: inset 0 0 0 $redpalettedark;
+            transition: ease-out 0.5s;
+                &:hover{
+                    box-shadow:inset 3rem 0 0 $redpalettedark ;
+                }
+            }
+        }
+        p{
+            color: white;
+            font-family: $textfont;
+            text-align: center;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+      }
