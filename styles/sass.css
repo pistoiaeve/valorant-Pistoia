@@ -103,7 +103,6 @@ body {
   font-family: akira;
   src: url(../fonts/Cocogoose\ Pro-trial.ttf);
 }
-/*Video section*/
 @font-face {
   font-family: revolution;
   src: url(../fonts/Akira\ Expanded\ Demo.otf);
@@ -210,7 +209,7 @@ body {
 .main__items .main__video--center .main__title {
   font-family: george;
   color: white;
-  font-size: 1rem;
+  font-size: 0.7rem;
   text-align: center;
   text-transform: capitalize;
   position: relative;
@@ -238,13 +237,13 @@ body {
 }
 .section__game .section__one h2 {
   font-family: george;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: black;
   text-transform: capitalize;
 }
 .section__game .section__one .section__button {
   font-family: revolution;
-  font-size: 1rem;
+  font-size: 0.7rem;
   border-radius: 0.4rem;
   padding: 0.5rem;
   background-color: rgba(255, 255, 255, 0);
@@ -270,13 +269,13 @@ body {
 .section__game .news__items p {
   padding-top: 3rem;
   font-family: george;
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: black;
   text-transform: capitalize;
 }
 .section__game .news__items .news__button {
   font-family: revolution;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: black;
   background-color: rgba(255, 255, 255, 0);
   box-shadow: inset 0 0 0 rgb(252, 66, 82);
@@ -286,8 +285,8 @@ body {
   box-shadow: inset 9.5rem 0 0 rgb(252, 66, 82);
 }
 
-@media screen and (min-width: 600px) {
-  p {
+@media screen and (min-width: 480px) {
+  h2 {
     color: red;
   }
 }
