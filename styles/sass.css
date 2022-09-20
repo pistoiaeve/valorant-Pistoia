@@ -1,3 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+}
+
+.header__list {
+  background-color: black;
+  padding-bottom: 0.4rem;
+}
+.header__list a {
+  text-decoration: none;
+  font-family: akira;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.header__list a:hover {
+  background-color: rgba(252, 66, 82, 0.385);
+}
+.header__list button:hover {
+  background-color: rgba(252, 66, 82, 0.385);
+}
+
+.header__img {
+  width: 10rem;
+}
+
+.header__button {
+  width: 2rem;
+}
+
+.footer__items {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+.footer__items .footer__icons .fa-brands {
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.4rem;
+  background-color: rgba(252, 66, 82, 0.385);
+  box-shadow: inset 0 0 0 rgb(252, 66, 82);
+  transition: ease-out 0.5s;
+}
+.footer__items .footer__icons .fa-brands:hover {
+  box-shadow: inset 3rem 0 0 rgb(252, 66, 82);
+}
+.footer__items p {
+  color: white;
+  font-family: simple;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__items p {
+    font-size: 1rem;
+  }
+}
 @font-face {
   font-family: revolution;
   src: url(../fonts/Akira\ Expanded\ Demo.otf);
@@ -9,10 +79,6 @@
 @font-face {
   font-family: simple;
   src: url(../fonts/Kalyant\ Demo-Light.otf);
-}
-@font-face {
-  font-family: buttons;
-  src: url(../fonts/AltoneTrial-Regular.ttf);
 }
 @font-face {
   font-family: akira;
@@ -79,115 +145,15 @@ body {
   color: white;
   font-family: simple;
   text-align: center;
-  font-size: 0.8rem;
-  margin-top: 1rem;
-}
-
-@font-face {
-  font-family: revolution;
-  src: url(../fonts/Akira\ Expanded\ Demo.otf);
-}
-@font-face {
-  font-family: george;
-  src: url(../fonts/Sansation_Regular.ttf);
-}
-@font-face {
-  font-family: simple;
-  src: url(../fonts/Kalyant\ Demo-Light.otf);
-}
-@font-face {
-  font-family: buttons;
-  src: url(../fonts/AltoneTrial-Regular.ttf);
-}
-@font-face {
-  font-family: akira;
-  src: url(../fonts/Cocogoose\ Pro-trial.ttf);
-}
-@font-face {
-  font-family: revolution;
-  src: url(../fonts/Akira\ Expanded\ Demo.otf);
-}
-@font-face {
-  font-family: george;
-  src: url(../fonts/Sansation_Regular.ttf);
-}
-@font-face {
-  font-family: simple;
-  src: url(../fonts/Kalyant\ Demo-Light.otf);
-}
-@font-face {
-  font-family: buttons;
-  src: url(../fonts/AltoneTrial-Regular.ttf);
-}
-@font-face {
-  font-family: akira;
-  src: url(../fonts/Cocogoose\ Pro-trial.ttf);
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: black;
-}
-
-.header__list {
-  background-color: black;
-  padding-bottom: 0.4rem;
-}
-.header__list a {
-  text-decoration: none;
-  font-family: akira;
-  letter-spacing: 0.1rem;
   font-size: 0.7rem;
-  text-transform: uppercase;
-}
-.header__list a:hover {
-  background-color: rgba(252, 66, 82, 0.385);
-}
-.header__list button:hover {
-  background-color: rgba(252, 66, 82, 0.385);
-}
-
-.header__img {
-  width: 10rem;
-}
-
-.header__button {
-  width: 2rem;
-}
-
-.footer__items {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1rem;
-}
-.footer__items .footer__icons .fa-brands {
-  padding: 0.5rem;
-  color: white;
-  border-radius: 0.4rem;
-  background-color: rgba(252, 66, 82, 0.385);
-  box-shadow: inset 0 0 0 rgb(252, 66, 82);
-  transition: ease-out 0.5s;
-}
-.footer__items .footer__icons .fa-brands:hover {
-  box-shadow: inset 3rem 0 0 rgb(252, 66, 82);
-}
-.footer__items p {
-  color: white;
-  font-family: simple;
-  text-align: center;
-  font-size: 0.8rem;
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .footer__items p {
+    font-size: 1rem;
+  }
+}
 :root {
   --animate-duration: 2s;
 }
@@ -223,9 +189,9 @@ body {
 
 .section__game {
   margin-top: -8rem;
-  background-image: url(../images/valorantbackground.jpg);
+  background-image: url(../images/valorantbackground.webp);
   background-repeat: no-repeat;
-  background-size: unset;
+  background-size: cover;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -285,369 +251,545 @@ body {
   box-shadow: inset 9.5rem 0 0 rgb(252, 66, 82);
 }
 
-@media screen and (min-width: 480px) {
-  h2 {
-    color: red;
+@media screen and (min-width: 460px) {
+  .main__items .main__video--center .main__title {
+    top: -14rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -15rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .main__items .main__video--center .main__title {
+    top: -16rem;
+    font-size: 0.9rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -17rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .main__items .main__video--center .main__title {
+    top: -18rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -19rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .main__items .main__video--center .main__title {
+    top: -16rem;
+    font-size: 0.9rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -17rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main__items .main__video--center .main__title {
+    top: -22rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -23rem;
+  }
+  .section__game .section__one h2 {
+    font-size: 1.3rem;
+  }
+  .section__game .news__items p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .main__items .main__video--center .main__title {
+    top: -30rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -31rem;
+  }
+  .section__game .section__one h2 {
+    font-size: 1.4rem;
+  }
+  .section__game .section__one .section__button {
+    font-size: 1rem;
+  }
+  .section__game .news__items .news__button {
+    font-size: 0.8rem;
+  }
+  .section__game .news__items p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__items .main__video--center .main__title {
+    top: -35rem;
+    font-size: 1rem;
+  }
+  .main__items .main__video--center .main__logo {
+    top: -38rem;
+    width: 35rem;
+  }
+  .section__game {
+    margin-top: -13rem;
+  }
+  .section__game .section__one h2 {
+    font-size: 1.5rem;
+  }
+  .section__game .section__one .section__button {
+    font-size: 1.1rem;
+  }
+  .section__game .news__items .news__button {
+    font-size: 1rem;
+  }
+  .section__game .news__items p {
+    font-size: 1.2rem;
   }
 }
 :root {
   --animate-duration: 2s;
 }
 
-/*MAPS SECTION */
-/*MOBILE FIRST*/
-.maps__body {
+@-webkit-keyframes flicker__animation {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker__animation {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.maps__main {
   background-color: black;
+  margin-bottom: -5rem;
 }
-
-.maps__bind {
-  background-image: url(../images/bind.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  min-height: 20rem;
-}
-
-.maps__bind h1 {
+.maps__main h1 {
   font-family: revolution;
-  font-size: 3rem;
+  font-size: 1.7rem;
   color: white;
-}
-
-.maps__bind p {
-  font-family: george;
-  font-size: 0.7rem;
-  color: white;
-  text-align: left;
-}
-
-.maps__haven {
-  background-image: url(../images/haven.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  min-height: 20rem;
-}
-
-.maps__haven h1 {
-  font-family: revolution;
-  font-size: 3rem;
-  color: white;
-}
-
-.maps__haven p {
-  font-family: george;
-  font-size: 0.7rem;
-  color: white;
-  text-align: left;
-}
-
-.maps__fracture {
-  background-image: url(../images/fracture.jpg);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  min-height: 20rem;
-}
-
-.maps__fracture h1 {
-  font-family: revolution;
-  font-size: 2rem;
-  color: white;
-}
-
-.maps__fracture p {
-  font-family: george;
-  font-size: 0.7rem;
-  color: white;
-  text-align: left;
-}
-
-@media screen and (min-width: 1024px) {
-  .maps__fracture,
-.maps__bind,
-.maps__haven {
-    min-height: 35rem;
-  }
-  .maps__fracture p,
-.maps__bind p,
-.maps__haven p {
-    font-size: 1.5rem;
-  }
-  .maps__fracture h1 {
-    font-size: 5rem;
-  }
-  .maps__bind h1,
-.maps__haven h1 {
-    font-size: 5rem;
-  }
-}
-/*support*/
-/*mobilefirst*/
-.support__body {
-  background-color: black;
-}
-
-.support__info {
-  background-image: url(../images/support.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: space-between;
-  height: 45rem;
-  align-content: center;
-  justify-content: space-evenly;
-  align-items: stretch;
-  justify-items: center;
-}
-
-.support__info h1 {
-  font-family: revolution;
-  color: white;
-  font-size: 2.5rem;
-}
-
-.support__form {
-  font-family: buttons;
-  color: white;
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 600px) {
-  .support__info h1 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .support__header a {
-    display: block;
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .support__info h1 {
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .support__info h1 {
-    font-size: 5rem;
-  }
-}
-/*MERCH*/
-/*mobile first*/
-.merch__body {
-  background-color: black;
-}
-
-.merch {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 30rem 30rem 30rem;
-}
-
-.merch__logo {
-  background-image: url(../images/valorantmerch.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.merch__logo h1 {
-  font-family: revolution;
-  color: white;
-  font-size: 3rem;
-}
-
-.merch__logo h2 {
-  font-family: george;
-  color: white;
-  font-size: 2rem;
-}
-
-.merch__clothes {
-  background-image: url(../images/merch.jpg);
-  background-repeat: no-repeat;
-  background-size: 30rem 30rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
-
-.merch__clothes h2 {
-  font-family: george;
-  color: white;
-  font-size: 2rem;
-}
-
-.merch__windbreaker {
-  background-image: url(../images/defythelimits.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-}
-
-.merch__windbreaker h3 {
-  font-family: george;
-  color: white;
-  font-size: 2rem;
+  text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.3rem;
+  animation: flicker__animation 0.7s reverse;
+  position: relative;
+  top: -10rem;
 }
-
-.merch__windbreaker h4 {
+.maps__main p {
   font-family: george;
+  font-size: 0.5rem;
   color: white;
-  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  top: -10rem;
+  text-transform: capitalize;
 }
 
-@media screen and (min-width: 367px) {
-  .merch__clothes {
-    background-size: cover;
+/*MOBILE FIRST*/
+@media screen and (min-width: 450px) {
+  .maps__main p {
+    top: -13rem;
+  }
+  .maps__main h1 {
+    top: -13rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .maps__main p {
+    top: -15rem;
+    font-size: 0.7rem;
+  }
+  .maps__main h1 {
+    top: -15rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .maps__main p {
+    top: -15rem;
+  }
+  .maps__main h1 {
+    top: -15rem;
   }
 }
 @media screen and (min-width: 680px) {
-  .merch__logo {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .maps__main p {
+    top: -17rem;
+    font-size: 0.8rem;
   }
-  .merch__logo h1 {
-    font-size: 4rem;
-  }
-  .merch__clothes h2 {
-    font-size: 3rem;
-  }
-  .merch__windbreaker h3 {
-    font-size: 3rem;
-  }
-  .merch__windbreaker h4 {
-    font-size: 3rem;
+  .maps__main h1 {
+    top: -17rem;
+    font-size: 2.3rem;
   }
 }
 @media screen and (min-width: 800px) {
-  .merch {
-    grid-template-rows: 50rem 50rem 50rem;
+  .maps__main p {
+    top: -20rem;
+    font-size: 0.9rem;
+  }
+  .maps__main h1 {
+    top: -20rem;
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .maps__main p {
+    top: -23rem;
+    font-size: 1rem;
+  }
+  .maps__main h1 {
+    top: -23rem;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .maps__main p {
+    top: -25rem;
+    font-size: 1.3rem;
+  }
+  .maps__main h1 {
+    top: -25rem;
+    font-size: 3.3rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .merch {
-    grid-template-rows: 70rem 70rem 70rem;
+  .maps__main p {
+    top: -35rem;
   }
-  .merch__logo h1 {
-    font-size: 5rem;
-  }
-  .merch__clothes h2 {
-    font-size: 4rem;
-  }
-  .merch__windbreaker h3 {
-    font-size: 4rem;
-  }
-  .merch__windbreaker h4 {
+  .maps__main h1 {
+    top: -35rem;
     font-size: 4rem;
   }
 }
 /*PLAYERS*/
 /*mobile first*/
-.players__body {
-  background-color: black;
-}
-
 .players {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 30rem 5rem;
 }
-
-.players__leaderboard {
-  background-image: url(../images/omen.png);
+.players .players__leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/valorant\ fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 30rem;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-
-.players__leaderboard img {
-  width: 15%;
-}
-
-.players__leaderboard h1 {
+.players .players__leaderboard h1 {
+  letter-spacing: 0.7rem;
   font-family: revolution;
-  color: white;
-  font-size: 1.3rem;
+  color: rgb(252, 66, 82);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  text-shadow: 0.2rem 0.2rem rgba(51, 51, 51, 0.563);
 }
-
-.players__search {
-  background-color: black;
+.players .players__leaderboard img {
+  width: 20rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.players .players__search {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.players__search h2 {
+.players .players__search h2 {
   font-family: george;
   color: white;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
+}
+.players .players__search .players__input {
+  width: 7rem;
+  font-family: simple;
+  font-size: 0.7rem;
   text-align: center;
 }
-
-.players__input {
-  width: 30%;
-  text-align: center;
-}
-
-.players__list li {
+.players .players__list li {
   color: white;
-  font-family: george;
-  font-size: 1rem;
+  font-family: simple;
+  font-size: 0.8rem;
+}
+.players .players__list .imgradiant {
+  width: 1.7rem;
 }
 
-.imgradiant {
-  width: 2rem;
-}
-
-.animate__fadeIn {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-}
-
-@media screen and (min-width: 600px) {
-  .players__search h2 {
-    font-size: 1.5rem;
-  }
-  .players__leaderboard h1 {
+@media screen and (min-width: 680px) {
+  .players .players__leaderboard h1 {
     font-size: 2rem;
   }
+  .players .players__search h2 {
+    font-size: 1rem;
+  }
+  .players .players__search .players__input {
+    font-size: 0.8rem;
+  }
+  .players .players__list li {
+    font-size: 1rem;
+  }
+  .players .players__list .imgradiant {
+    width: 1.8rem;
+  }
 }
-@media screen and (min-width: 800px) {
-  .players__leaderboard {
-    height: 40rem;
+@media screen and (min-width: 1000px) {
+  .players {
+    grid-template-rows: 50rem 10rem;
   }
-  .players__search h2 {
-    font-size: 2rem;
-  }
-  .players__leaderboard h1 {
+  .players .players__leaderboard h1 {
     font-size: 3rem;
   }
-  .players__list {
+  .players .players__leaderboard img {
+    width: 30rem;
+  }
+  .players .players__search h2 {
     font-size: 1.5rem;
   }
+  .players .players__search .players__input {
+    font-size: 1rem;
+    width: 13rem;
+    height: 3rem;
+  }
+  .players .players__list li {
+    font-size: 1.3rem;
+  }
+  .players .players__list .imgradiant {
+    width: 3rem;
+  }
 }
-@media screen and (min-width: 1024px) {
-  .players {
-    grid-template-rows: 40rem 5rem;
+/*support*/
+.support__info {
+  background-image: url(../images/killjoygif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support__info h1 {
+  font-family: akira;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.support__submit h2 {
+  font-family: akira;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2rem;
+}
+.support__submit h3 {
+  font-family: george;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.support__form {
+  font-family: simple;
+  color: white;
+}
+
+/*mobilefirst*/
+@media screen and (min-width: 600px) {
+  .support__submit h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .support__info {
+    height: 40rem;
+  }
+  .support__submit h2 {
+    font-size: 2.3rem;
+  }
+  .support__submit h3 {
+    font-size: 0.8rem;
+  }
+  .support__form {
+    font-size: 1.2rem;
+  }
+}
+/*MERCH*/
+/*mobile first*/
+.merch__logo {
+  background-image: url(../images/valorant\ merch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.merch__logo h1 {
+  font-family: akira;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem rgba(51, 51, 51, 0.563);
+}
+.merch__logo h2 {
+  font-family: george;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+
+.merch__father {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+}
+.merch__father .merch__section {
+  padding: 2rem 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.merch__father .merch__section h3 {
+  font-family: simple;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.merch__father .merch__section img {
+  width: 15rem;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.merch__father .merch__section img:hover {
+  transform: scale(1.1);
+}
+.merch__father .merch__section button {
+  border-radius: 3rem;
+  font-family: simple;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 500px) {
+  .merch__father {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 680px) {
+  .merch__logo {
+    height: 30rem;
+  }
+  .merch__father .merch__section img {
+    width: 17rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .merch__logo {
+    height: 35rem;
+  }
+  .merch__father .merch__section h3 {
+    font-size: 1.7rem;
+  }
+  .merch__father .merch__section img {
+    width: 18rem;
+  }
+  .merch__father .merch__section button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .merch__logo {
+    height: 40rem;
+  }
+  .merch__logo h1 {
+    font-size: 4rem;
+  }
+  .merch__logo h2 {
+    font-size: 2rem;
+  }
+  .merch__father .merch__section img {
+    width: 20rem;
+  }
+  .merch__father .merch__section button {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=sass.css.map */

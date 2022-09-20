@@ -1,0 +1,160 @@
+@keyframes flicker__animation {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+  .maps__main {
+   background-color: black;
+   margin-bottom: -5rem;
+   h1{
+    font-family: $buttonsfont;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    animation: flicker__animation 0.7s reverse;
+    position: relative;
+    top: -10rem;
+   }
+   p{
+    font-family: $subtitlefont;
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -10rem;
+    text-transform: capitalize;
+   }
+}
+/*MOBILE FIRST*/
+@media screen and (min-width: 450px){
+    .maps__main{
+    p{
+        top: -13rem;
+    }
+    h1{
+        top:-13rem;
+    }
+}
+}
+@media screen and (min-width: 600px){
+    .maps__main{
+    p{
+        top: -15rem;
+        font-size: 0.7rem;
+    }
+    h1{
+        top:-15rem;
+        font-size: 2rem;
+    }
+}
+}
+@media screen and (min-width: 450px){
+    .maps__main{
+    p{
+        top: -15rem;
+    }
+    h1{
+        top:-15rem;
+    }
+}
+}
+@media screen and (min-width: 680px){
+    .maps__main{
+    p{
+        top: -17rem;
+        font-size: 0.8rem;
+    }
+    h1{
+        top:-17rem;
+        font-size: 2.3rem;
+    }
+}
+}
+@media screen and (min-width: 800px){
+    .maps__main{
+    p{
+        top: -20rem;
+        font-size: 0.9rem;
+    }
+    h1{
+        top:-20rem;
+        font-size: 2.4rem;
+    }
+}
+}
+@media screen and (min-width: 900px){
+    .maps__main{
+    p{
+        top: -23rem;
+        font-size: 1rem;
+    }
+    h1{
+        top:-23rem;
+        font-size: 3rem;
+    }
+}
+}
+@media screen and (min-width: 1000px){
+    .maps__main{
+    p{
+        top: -25rem;
+        font-size: 1.3rem;
+    }
+    h1{
+        top:-25rem;
+        font-size: 3.3rem;
+    }
+}
+}
+@media screen and (min-width: 1200px){
+    .maps__main{
+    p{
+        top: -35rem;
+    }
+    h1{
+        top:-35rem;
+        font-size: 4rem;
+    }
+}
+}

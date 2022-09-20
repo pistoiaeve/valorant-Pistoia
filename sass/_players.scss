@@ -1,0 +1,109 @@
+/*PLAYERS*/
+  /*mobile first*/
+  .players {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 5rem;
+    .players__leaderboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../images/valorant\ fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            letter-spacing: 0.7rem;
+            font-family: $buttonsfont;
+            color: $redpalettedark;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+            text-shadow: 0.2rem 0.2rem rgba(51, 51, 51, 0.563);
+        }
+        img{
+            width: 20rem;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.7);
+        }
+      }
+      .players__search{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2{
+        font-family:$subtitlefont;
+        color: white;
+        font-size: 0.9rem;
+      }
+      .players__input {
+        width: 7rem;
+        font-family: $textfont;
+       font-size: 0.7rem;
+       text-align: center;
+      }
+    }
+    .players__list{
+        li{
+            color: white;
+            font-family: $textfont;
+            font-size: 0.8rem;
+        }
+        .imgradiant {
+            width: 1.7rem;
+          }
+    }
+  }
+  @media screen and (min-width: 680px) {
+    .players{
+    .players__leaderboard {
+      h1{
+          font-size: 2rem;
+      }
+    }
+    .players__search{
+    h2{
+      font-size: 1rem;
+    }
+    .players__input {
+     font-size: 0.8rem;
+    }
+  }
+  .players__list{
+      li{
+          font-size: 1rem;
+      }
+      .imgradiant {
+          width: 1.8rem;
+        }
+  }
+    }}
+    @media screen and (min-width: 1000px) {
+      .players{
+        grid-template-rows: 50rem 10rem;
+      .players__leaderboard {
+        h1{
+            font-size: 3rem;
+        }
+        img{
+          width:30rem;
+      }
+      }
+      .players__search{
+      h2{
+        font-size: 1.5rem;
+      }
+      .players__input {
+       font-size: 1rem;
+       width: 13rem;
+       height: 3rem;
+      }
+    }
+    .players__list{
+        li{
+            font-size: 1.3rem;
+        }
+        .imgradiant {
+            width: 3rem;
+          }
+    }
+      }}

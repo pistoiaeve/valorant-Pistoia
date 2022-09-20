@@ -29,9 +29,9 @@
 }
   .section__game {
     margin-top: -8rem;
-    background-image: url(../images/valorantbackground.jpg);
+    background-image: url(../images/valorantbackground.webp);
     background-repeat: no-repeat;
-    background-size: unset;
+    background-size: cover;
     min-width: fit-content;
     padding: 5rem;
         .section__one{
@@ -89,10 +89,144 @@
 
           }
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 460px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -14rem;
+      }
+      .main__logo {
+        top: -15rem;
+      }
+}
+} 
+}
+@media screen and (min-width: 580px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -16rem;
+        font-size: 0.9rem;
+      }
+      .main__logo {
+        top: -17rem;
+        width: 20rem;
+      }
+}
+} 
+}
+@media screen and (min-width: 680px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -18rem;
+      }
+      .main__logo {
+        top: -19rem;
+      }
+}
+} 
+}
+@media screen and (min-width: 580px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -16rem;
+        font-size: 0.9rem;
+      }
+      .main__logo {
+        top: -17rem;
+        width: 20rem;
+      }
+}
+} 
+}
+@media screen and (min-width: 800px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -22rem;
+      }
+      .main__logo {
+        top: -23rem;
+      }
+}
+} 
+.section__game{
+.section__one{
   h2{
-    color: red;
+font-size: 1.3rem;
   }
+}
+.news__items{
+  p{
+    font-size: 1rem;
+  }
+}
+}
+}
+@media screen and (min-width: 950px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -30rem;
+      }
+      .main__logo {
+        top: -31rem;
+      }
+}
+} 
+.section__game{
+.section__one{
+  h2{
+font-size: 1.4rem;
+  }
+  .section__button{
+    font-size: 1rem;
+  }
+}
+.news__items{
+  .news__button{
+    font-size: 0.8rem;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+}
+}
+}
+@media screen and (min-width: 1200px){
+  .main__items{
+  .main__video--center {
+    .main__title {
+        top: -35rem;
+        font-size: 1rem;
+      }
+      .main__logo {
+        top: -38rem;
+        width: 35rem;
+      }
+}
+} 
+.section__game{
+  margin-top: -13rem;
+.section__one{
+  h2{
+font-size: 1.5rem;
+  }
+  .section__button{
+    font-size: 1.1rem;
+  }
+}
+.news__items{
+  .news__button{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+}
+}
 }
 
 
